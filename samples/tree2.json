@@ -58,7 +58,7 @@
              {"value": 1,
               "type": "binary",
               "title": "Provides information with no embedded text",
-              "content": "Requires lengthy description?",
+              "content": "Is a lengthy description required?",
               "children": [
                 {"value": 0,
                  "title": "image requires a lengthy description",
@@ -70,10 +70,24 @@
                  "title": "image does not require a lengthy description",
                  "content": "Does the image convey an object(s) with 3-dimensional characteristics?",
                  {"value": 0,
-                 "title": "image does not convery an object with 3-dimesional characteristics",
+                 "title": "image does not convery an object with 3-dimensional characteristics",
                  "content": "provide a 2 or 2.5-dimesnional tactile graphic"
                 } 
+                {"value": 1,
+                "type": "binary",
+                "title": "image does convey an object with 3-dimensional characteristics",
+                "content": "Does the image show processes or stages?",
+                "children": [
+                {"value": 0,
+                "type": "binary",
+                "title": "image does convey an object with 3-dimensional characteristics",
+                "content": "Is the object readily available to touch?",
+                {"value": 0,
+                "content": "provide a 3-dimesnional model"
+                }              
+             ]   
                 }
+               
               ]
              }
            ]
