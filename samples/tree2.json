@@ -75,8 +75,66 @@
                    "content": "provide a 2 or 2.5-dimesnional tactile graphic"
                   },
                   {"value": 1,
-                   "title": "?",
-                   "content": "?"
+                   "type": "nary",
+                   "title": "image does convery an object with 3-dimesional characteristics",
+                   "content": "Does the image show processes or stages?",
+                   "labels": [
+                    {"text": "The image shows processes or stages and has moveable parts ",
+                     "value": 0},
+                    {"text": "The image shows processes or stages only",
+                     "value": 1},
+                    {"text": "The image does NOT show processes or stages",
+                     "value": 2}
+                  ],
+                  "children": [
+                    {"value": 0,
+                    "title": "image with 3-dimensional characteristics",
+                     "content": "You will need to provide a tactile graphic that shows the overall processes or stages as well as a 3D model or real object for each aspect that conveys an object with 3D characteristics"
+                    },
+                    {"Value": 1,
+                      "title":"image with 3-dimensional characteristics",
+                      "content": "Is the object too large, too small, too fragile, too expensive, or too dangerous to handle?",
+                      "Type":"binary",
+                      "children": [
+                        {"value": 0,
+                        "title":"image with 3-dimensional characteristics",
+                        "Content": "Provide real object"
+                        },
+                        {"value": 1,
+                        "title": "image with 3-dimensional characteristics",
+                      "Content": "Provide a 3D model"}
+                      ]
+                  },
+                       {"value": 2,
+                        "content": "Is the object readily available to touch?",
+                        "title": "image with 3-dimensional characteristics",
+                        "Type": "binary",
+                        "children": [
+                          {"value": 0,
+                          "title":"image with 3-dimensional characteristics",
+                        "content": "Provide a 3D model"},
+                        {"value": 1,
+                          "title":"image with 3-dimensional characteristics",
+                          "content": "Is the object too large, too small, too fragile, too expensive, or too dangerous to handle?",
+                          "Type":"binary",
+                          "children": [
+                            {"value": 0,
+                            "title":"image with 3-dimensional characteristics",
+                            "Content": "Provide real object"
+                            },
+                            {"value": 1,
+                              "title": "image with 3-dimensional characteristics",
+                            "Content": "Provide a 3D model"}
+                        ]
+                    
+                       }
+                     ]
+                   
+                   
+                    
+                    }
+                   ]
+          
                   }
                 ]
                }
