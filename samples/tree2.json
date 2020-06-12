@@ -21,7 +21,7 @@
       },
       {"value": 1,
        "title": "Icon",
-       "content": "describe the image, select the go button for reasources on providing image descriptions",
+       "content": "describe the image, select the go button for resources on providing image descriptions",
        "action": "http://diagramcenter.org/making-images-accessible.html#descriptiontemplates"
       }
     ]
